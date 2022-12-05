@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+@font-face {
+    font-family: 'Bree serif';
+    src: url("../Fons/BreeSerif-Regular.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #eee;
+}
+li{
+    list-style:none;
+}
+.gallary li{
+    width: 10em;
+    height: 10em;
+    background-color: blueviolet;
+    display: inline-block;
+    margin: 0.4em;
+}
+.gallary img{
+    width: 10em;
+    height: 10em;
+}
+a{
+    color: #00b3ff;
+    text-decoration: none;
+}
+a:visited{
+    color: #00b3ff;
+    text-decoration: none;
+}
+a:hover{
+color: #5f5f5f;
+text-decoration: underline;
+}
+
+@media (min-width:700px) {
+    .wrapper {
+        width:960px;
+        float: left;
+        background-color: white;
+
+        border-color: #ccc;
+        border-style: solid;
+        border-width: 1px;
+
+    }
+    
+
+    .sameHeight {
+        display: flex;
+    }
+
+    header {
+        padding: 10px;
+        background-size: 100% 100%;
+        min-height: 54px;
+        background-image: url("../Images/header.jpg");
+    }
+
+    main {
+        float: left;
+        width: calc(100% - 198px);
+        padding: 12px;
+    }
+
+    aside {
+        float: right;
+        padding: 12px;
+        margin-left: 10px;
+
+        width: 150px;
+      
+        background-color: lightgray;
+    }
+
+    footer {
+        padding: 10px;
+        clear: both;
+        height: 200px;
+        background-color: rgb(229, 229, 229);
+
+    }
+}
+@media (max-width:700px) {
+    header {
+        padding: 0.6em;
+        background-image: url("../Images/header.jpg");
+        background-size: 100% 100%;
+        min-height: 54px;
+        clear: both;
+    }
+
+    main {
+        padding: 0.6em;
+        clear: both;
+    }
+
+    aside {
+        clear: both;
+        padding: 0.6em;
+        background-color: lightgray;
+    }
+
+    footer {
+        clear: both;
+        padding: 0.6em;
+        clear: both;
+        height: 15em;
+        background-color: rgb(229, 229, 229);
+    }
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 32px;
+}
+
+h1 {
+    font-family: 'Bree serif', Arial, sans-serif;
+    font-size: 30px;
+    color: #00b3ff;
+}
+
+h2 {
+    font-family: 'Trade Winds', Arial, sans-serif;
+    font-size: 24px;
+    color: #00b3ff;
+}
+
